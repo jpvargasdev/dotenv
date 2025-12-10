@@ -11,6 +11,13 @@
 lvim.transparent_window = true 
 lvim.colorscheme = "github_dark"
 
+lvim.builtin["terminal"].execs = {
+  { nil, "<leader>th", "Horizontal Terminal", "horizontal", 0.3 },
+  { nil, "<leader>tv", "Vertical Terminal", "vertical", 0.4 },
+  { nil, "<leader>tf", "Float Terminal", "float", nil },
+}
+
+
 lvim.plugins = {
   -- Helm ls
   {
@@ -132,3 +139,4 @@ vim.diagnostic.config({ virtual_lines = false })
 
 lvim.builtin.nvimtree.setup.view.side = "right"
 lvim.builtin.nvimtree.setup.view.width = 35
+
